@@ -1,0 +1,26 @@
+Plik główny: Kompilator.py
+Autor: Ryszard Chereźniak
+Numer indeksu: 272333
+
+Cel: kompilator prostego języka programowania opisanego na liście.
+
+Język: Python
+Zalecana wersja: Python 3.10.12
+
+Dołączone pliki dodatkowe:
+-parser.out
+-parsetab.py
+Pliki te zostałyby wygenerowane przy pierwszym użyciu programu, a posiadanie ich skraca cczas działania kompilatora.
+
+Wykorzystane pakiety i biblioteki:
+-ply - do stworzenia lexera i parsera gramatyki
+-sys - argv do pobierania argumentów wywołania programu
+-typing - wykorzystane w notacji sugerującej typy
+
+Syntax wywołania programu: python3 Kompilator.py [nazwa pliku wejściowego z rozszerzeniem .imp] [nazwa pliku wynikowego - bez podawania rozszerzenia, jest ono dodawane automatycznie]
+
+Rezultat działania:
+-w przypadku poprawnego programu, skompilowany do zadanego assemblera kod dla maszyny wirtualnej
+-w przypadku niepoprawnego programu, komunikat/komunikaty o błędach
+
+Kompilator może w trakcie kompilacji wyświetlić ostrzeżenie o potencjalnie niebezpiecznych sytuacjach - nie zapobiega ono kompilacji (o ile nie wystąpiły zarazem błędy), lecz jedynie sugeruje programiście upewnienie się, że opisane w ostrzeżeniu sytuacje nie zagrażają poprawnemu działaniu programu.
